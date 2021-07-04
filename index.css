@@ -1,0 +1,426 @@
+@font-face {
+    font-family: 'Waiting for the Sunrise';
+    src: url('fonts/WaitingfortheSunrise-Regular.eot');
+    src: local('☺'), url('fonts/WaitingfortheSunrise-Regular.woff') format('woff'), url('fonts/WaitingfortheSunrise-Regular.ttf') format('truetype'), url('fonts/WaitingfortheSunrise-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('fonts/Quicksand-Bold.eot');
+    src: local('☺'), url('fonts/Quicksand-Bold.woff') format('woff'), url('fonts/Quicksand-Bold.ttf') format('truetype'), url('fonts/Quicksand-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand-Regular.eot');
+    src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand-Light';
+    src: url('fonts/Quicksand-Light.eot');
+    src: local('☺'), url('fonts/Quicksand-Light.woff') format('woff'), url('fonts/Quicksand-Light.ttf') format('truetype'), url('fonts/Quicksand-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9A9A9A;
+    ; }
+
+/* Styles for Header  */
+.wrapper {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header.top_header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+
+header.top_header .wrapper nav.left_nav ul, header.top_header .wrapper nav.right_nav ul {
+    display: flex;
+    font-size: 18px;
+    line-height: 22px;
+    color: #433840;
+}
+
+header.top_header .wrapper nav.left_nav ul li, header.top_header .wrapper nav.right_nav ul li {
+    margin-right: 16px;
+}
+
+header.top_header .wrapper nav.left_nav ul li.active, header.top_header .wrapper nav.right_nav ul li.active {
+    color: #FEA3AC;
+}
+
+header.top_header .wrapper nav.left_nav ul li a, header.top_header .wrapper nav.right_nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header.top_header .wrapper nav.left_nav ul li a:hover, header.top_header .wrapper nav.right_nav ul li a:hover {
+    color: #FEA3AC ;
+    transition: all 300ms ease-in-out;
+}
+
+/* Styles for Page Heading */
+.svg_style {
+    position: relative;
+}
+
+.page_heading {
+    min-height: 400px;
+    position: relative;
+    background-size: cover;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page_heading.about_page {
+    background: transparent url(img/about_header.jpg) center center no-repeat;
+}
+
+.svg_style::before {
+    content: "";
+    width: 100%;
+    height: 130px;
+    background: url(img/top.svg) center center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.svg_style::after {
+    content: "";
+    width: 100%;
+    height: 110px;
+    background: url(img/buttom.svg) center center no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.page_heading h2 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.page_heading span.subtitle {
+    font-family: 'Waiting for the Sunrise';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+/* About Box */
+.about_box {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.about_box .item_data:first-child {
+    padding-left: 25px;
+    padding-right: 45px;
+}
+
+.about_box .item_data:last-child {
+    padding-left: 45px;
+    padding-right: 25px;
+}
+
+.about_box .item_data article {
+    margin-bottom: 80px;
+}
+
+.about_box .item_data article:last-child {
+    margin-bottom: 0;
+}
+
+.about_box .item_data article h3 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    color: #433840;
+    margin-bottom: 12px;
+}
+
+.about_box .item_data article p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #9A9A9A;
+}
+
+/* Infographic */
+.infographic {
+    background: #FEA3AC;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+}
+
+.infographic .info_list {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infographic .info_list .item_info {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.infographic .info_list .item_info:first-child {
+    margin-left: 57px;
+}
+
+.infographic .info_list .item_info:last-child {
+    margin-right: 57px;
+}
+
+.infographic .info_list .item_info .icon {
+    width: 135px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.infographic .info_list .item_info .count {
+    font-family: 'Waiting for the Sunrise';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 99px;
+    color: #DFEEB6;
+    display: block;
+}
+
+.infographic .info_list .item_info h4 {
+    font-family: 'Quicksand-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+/* Team */
+.team h2.box_title {
+    font-family: 'Quicksand-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #433840;
+    text-align: center;
+}
+
+.team .subtitle {
+    font-family: 'Waiting for the Sunrise';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+    color: #F7A1A8;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.team_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.team_list .team_member {
+    width: 70%;
+    background: #C9E3F4;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 190px;
+    display: flex;
+    align-items: center;
+}
+
+.team_list .team_member .img img {
+    border-radius: 100%;
+    margin-left: -190px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.team_list .team_member .data {
+    margin-left: 17px;
+}
+
+.team_list .team_member .data .name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.team_list .team_member .data .post {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    color: #433840;
+    margin-bottom: 14px;
+}
+
+.team_list .team_member .data p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    color: #433840;
+    margin-bottom: 10px;
+}
+
+.team_list .team_member .data .social {
+    letter-spacing: 10px;
+}
+
+.team_list .team_member:nth-child(2), .team_list .team_member:nth-child(3) {
+    background: #DFEEB6;
+}
+
+.team_list .team_member:nth-child(3), .team_list .team_member:nth-child(4) {
+    margin-left: 0;
+    margin-right: 190px;
+}
+
+.team_list .team_member:nth-child(3) .img, .team_list .team_member:nth-child(4) .img {
+    order: 2;
+}
+
+.team_list .team_member:nth-child(3) .img img, .team_list .team_member:nth-child(4) .img img {
+    margin-left: 0;
+    margin-right: -190px;
+}
+
+.team_list .team_member:nth-child(3) .data, .team_list .team_member:nth-child(4) .data {
+    order: 1;
+    margin-left: 0;
+    margin-right: 17px;
+    text-align: right;
+}
+
+.foo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url(img/foo_fruits.png);
+    height: 499px;
+}
+
+.foo .title {
+    font-family: 'Quicksand-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.foo .item_foo p, .foo .item_foo img {
+    margin-top: 62px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.foo .item_foo:first-child {
+    padding-left: 25px;
+    padding-right: 45px;
+}
+
+.foo .item_foo:last-child {
+    padding-left: 45px;
+    padding-right: 25px;
+}
+
+.foo .social_feed .foo_grid_img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 124px;
+}
+
+.foo_copyright_social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    left: 0;
+    top: -60px;
+    width: 100%;
+    background: #433840;
+}
+
+.foo_copyright_social .position {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.foo_copyright_social .position {
+    display: inline-block;
+    margin: 15px 45px 10px 25px;
+}
+
+.foo_copyright_social .social {
+    padding: 15px 0px 10px 270px;
+    letter-spacing: 10px;
+}
+
+.foo_copyright_social .social a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: right;
+    color: #DFEEB6;
+    letter-spacing: 10px;
+}
